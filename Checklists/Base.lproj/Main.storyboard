@@ -39,6 +39,9 @@
                                         </label>
                                     </subviews>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <segue destination="GgV-xc-wfg" kind="show" identifier="EditItem" trigger="accessoryAction" id="yj3-I0-2Af"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -142,6 +145,9 @@
             <point key="canvasLocation" x="-140" y="-41.829085457271368"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="yj3-I0-2Af"/>
+    </inferredMetricsTieBreakers>
     <resources>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
