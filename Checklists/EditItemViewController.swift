@@ -7,7 +7,7 @@
 
 import UIKit
 
-protocol AddItemViewControllerDelegate: AnyObject {
+protocol ItemDetailViewController: AnyObject {
     func addItemViewControllerDidCancel(
         _ controller: AddItemViewController)
     func addItemViewController(
@@ -57,7 +57,7 @@ class AddItemViewController: UITableViewController, UITextFieldDelegate {
         }
     }
     
-    weak var delegate: AddItemViewControllerDelegate?
+    weak var delegate: ItemDetailViewController?
     var itemToEdit: ChecklistItem?
     
     // MARK: - Table View Delegates
