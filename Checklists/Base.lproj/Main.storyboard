@@ -80,8 +80,16 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="Add Item" id="4o0-Ke-UTU">
-                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="OW2-zH-bcT"/>
-                        <barButtonItem key="rightBarButtonItem" systemItem="done" id="H08-Jt-Bof"/>
+                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="OW2-zH-bcT">
+                            <connections>
+                                <action selector="cancel" destination="GgV-xc-wfg" id="AQg-li-Myq"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" systemItem="done" id="H08-Jt-Bof">
+                            <connections>
+                                <action selector="done" destination="GgV-xc-wfg" id="yRv-ap-4hY"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ctK-Fj-hqZ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
