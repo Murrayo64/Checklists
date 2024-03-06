@@ -23,6 +23,11 @@ class AddItemViewController: UITableViewController, UITextFieldDelegate {
         super.viewDidLoad()
         
         navigationItem.largeTitleDisplayMode = .never
+        
+        if let item = itemToEdit {
+            title = "Edit Item"
+            textField.text = item.text
+        }
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -43,6 +48,7 @@ class AddItemViewController: UITableViewController, UITextFieldDelegate {
     }
     
     weak var delegate: AddItemViewControllerDelegate?
+    var itemToEdit: ChecklistItem?
     
     // MARK: - Table View Delegates
     override func tableView(
