@@ -61,12 +61,18 @@ var items = [ChecklistItem]()
         at indexPath: IndexPath) {
             
             let item = items[indexPath.row]
-            
             if item.checked {
                 cell.accessoryType = .checkmark
             } else {
                 cell.accessoryType = .none
             }
+        }
+    
+    func configureText(
+        for cell: UITableViewCell,
+        with item: ChecklistItem) {
+            let label = cell.viewWithTag(1000) as! UILabel
+            label.text = item.text
         }
     
     // MARK: - Table View Delegates
